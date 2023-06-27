@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo Website</title>
+    <script src="https://kit.fontawesome.com/34f5fb1ad7.js" crossorigin="anonymous"></script> 
+    <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sulphur Point' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Foldit' rel='stylesheet'>
+    <style>
+        body   {
+            background-image: url("back.jpg") ;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      backdrop-filter: blur(0);
+      width: 1471px;
+    
+    }
+
+
+
+    header {
+      background-color: rgba(208, 204, 204, 0);
+      color: #fff;
+      padding: 2px;
+      height: 120px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      height: 100px;
+    }
+
+    nav a {
+      color: rgb(18, 18, 18);
+      text-align: center;
+      text-decoration: none;
+      margin: 35px 50px;
+      font-size: larger;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      font-weight: 600;
+    }
+    
+a {
+  position: relative;
+  color: #f3eeee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(237, 99, 0);
+}
+
+a::before {
+  content: ""; 
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #120101;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+    
+    nav img {
+     display: block;
+     margin-right: auto;
+     padding: 02px;
+    }
+
+    div {
+        
+        border-radius: 20px;
+        text-align: center;
+        text-align: center;
+        margin: 30px;
+        /* font-family: Copperplate, Papyrus, fantasy; */
+        font-weight: 300;
+    }
+
+    p{
+      margin-right: auto;
+      margin-left: auto;
+        margin: 30px 30px 30px 30px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    h1{
+      font-family: Copperplate, Papyrus, fantasy;
+      letter-spacing: 8px;
+      
+    }
+
+    div img{
+      display: flex;
+      float: right;
+      margin-left: 40px;
+    }
+
+    #home{
+      height: 350px;
+      width: auto;
+    }
+
+    .space{
+      font-family: 'Sulphur Point';
+      font-weight: 590;
+      width: 600px;
+      margin-left: 65px;
+    }
+
+    #home img{
+      backdrop-filter: 10px 10px 40px;
+    }
+
+    #homeget{
+      height: 150px;
+      margin-right: 150px;
+      margin-top: 40px;
+    }
+
+    #homeget img{
+      border-radius: 20px;
+      /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.826); */
+      backdrop-filter: blur(2px);
+    }
+
+    #getimg {
+      height: 250px;
+      margin-left: 890px;
+      margin-top: 70px;
+      margin-right: 0;
+    }
+
+    #gettxt{
+      text-align: right;
+      margin-right: -40px;
+      font-size: x-small;
+    }
+
+    #gethead{
+      font-family: 'Cedarville Cursive';
+      letter-spacing: 6px;
+      font-size: 32px;
+      margin-bottom: 60px;
+      margin-top: -px;
+    }
+
+    .input-panel{
+      text-align: center;
+      width: 310px;
+      margin-left: 180px;
+      color: bisque;
+    }
+
+    #Number{
+      align-items: center;
+    }
+
+    .form-dark{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0;
+    }
+
+    #about{
+      height: 750px;
+      color: #f3eeee;
+      background-image: url('ab3.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 10px;
+      margin-top: 165px;
+      margin-bottom: 20px;
+      border-radius: 0;
+    }
+
+    #abouth{
+      font-family: 'Fredericka the Great';
+      text-align: left;
+    }
+
+    #about1{
+     background-color: #0a0909;
+
+    }
+
+    .row {
+  display: flex;
+}
+
+.column {
+  padding: 10px;
+}
+
+#aboutp{
+  color: #0a0909;
+  font-weight: 100;
+}
+
+.abp{
+  font-family: 'Poiret One';
+  font-weight: 600;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 60%;
+  background-color: #030303f5;
+  color: white;
+  padding: 6px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ input[type=submit]:hover {
+  background-color:  #d41e11;
+ }
+
+ .input-panel {
+    transition: box-shadow .3s;
+    color: #0c0b0b;
+    height: 150px;
+    padding: 2px ;
+    /* background-image: url('getback.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-color: peachpuff; */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 0px;
+    margin-left: 60px;
+    margin-top: -25px;
+    text-align: right;
+    /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.826); */
+  }
+
+  .input-panel:hover{
+  box-shadow: 0 0 19px rgba(33,33,33,.2); 
+  }
+
+  #facility{
+    height: 708px;
+      color: #f3eeee;
+      /* background-image: url('abback2.jpg'); */
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 10px;
+      margin-top: 4px;
+      margin-bottom: 20px;
+  }
+
+  #facilityh{
+    color: #0a0909;
+  }
+
+  .row1{
+    display: flex;
+  }
+
+  .column1{
+    color: #ccc;
+  }
+
+  #column2{
+    float: left;
+    width: 28%;
+  }
+
+  #column3{
+    float: left;
+    width: 28%;
+  }
+
+  #column4{
+    float: right;
+    width: 28%;
+  }
+
+  #soc{
+    transition: opacity .3s;
+  }
+
+  #soc:hover{
+opacity: 0.2;
+  }
+
+
+</style>
+</head>   
+<body>
+    <header>
+        <nav>
+          <img src="log.png" alt="logo" width="140" height="140"  />
+          <a href="#about"><i class="fa-solid fa-chart-simple fa-rotate-270" style="color: #d41e11;"></i>&nbsp;&nbsp;About</a>
+          <a href="#facility"><i class="fa-solid fa-image" style="color: #d41e11;"></i>&nbsp;&nbsp;Facilities</a>
+          <a href="#contact"><i class="fa-solid fa-mobile-screen-button" style="color: #d41e11;"></i>&nbsp &nbsp;Contact</a>
+          <a href="#home"><i class="fa-solid fa-house fa-beat-fade fa-xl" style="color: #0a0909;"></i></a>
+        </nav>
+    </header>
+
+    <div class="container" id="home">
+        <h6>&nbsp;</h6>
+        <p><div><img src="home1.jpg" class="w-100" alt="Pineapple" style="width:600px;height:300px;border-radius: 12px;"></div>
+          <h1>Principal's Message</h1><p class="space">It has always been found that the equation of refined manners, character based on sound standards, efficiency and high values have been the foundation of Tonbridge School. We believe in leading by example to reach the high water mark.
+            <br><br>
+            Principal,
+            <br>
+            Mrs. Hermione Granger
+            
+            </p> </p>
+        <h6>&nbsp;</h6>
+    </div>
+
+    <div id="homeget">
+
+      <div id="getimg" style="height: 150px;width: 500px;">
+        <div class="input-panel">
+          <div style="margin: 50px;margin-top: 15px;">
+            <form action="/action_page.php">
+              <label for="Email" style="font-family: cursive;">Enter your email</label>
+              <input type="email" id="email"  placeholder="enter your email">
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="gettxt"><h1 id="gethead">get in Touch With us</h1></div>
+
+    </div>
+</body>    
+<body id="about1">
+    <div class="row" id="about" style="width: 1511px;margin-left: 0;">
+
+       <div class="column" id="abouth"><h1>ABOUT</h1><h1>US</h1>
+       </div>
+       <div class="column" id="aboutp"><br><br><br><br><br> <h1>Mission</h1>
+           <p class="abp">Trusting in the Providence of God, we instill in the students the values – love, justice, forgiveness, tolerance and concern for others to help them to achieve harmonious integration between Religion and Life and thereby become a “Channel of Peace”. <br><br>
+
+            It impart an appreciation of the Indian heritage and enables the students to imbibe its culture and ethos for building up a harmonious society, irrespective of faith, language , caste , sex etc.Inculcate a sense of Eco – consciousness and love for nature.  Above all our target is  “Education for All” and make them physically and mentally fit to become active useful and worthy citizens of India.</p>
+            <br><h1>Vision</h1><p class="abp">Our mission is to provide a nurturing and inclusive learning environment that empowers students to reach their full potential, embrace critical thinking, and become responsible global. <br><br> We strive to deliver a comprehensive and engaging curriculum that integrates innovative teaching methodologies, cutting-edge technology, and real-world applications. Through collaboration with parents, educators, and the wider community, we aim to foster a lifelong love for learning, foster respect for diversity, and cultivate ethical values that will guide our students to make positive contributions to society.
+
+              Our Commitments:</p>
+        </div>
+
+    </div>
+</body>
+<body id="facility1">
+
+<div id="facility" class="row1" style="width: 1501px;margin-left: 0;">
+
+        <div class="column1" id="facilityh" style="margin-left: 150px;"><br><br><br><br><br><br><br><br><br><br><br><br><h1 style="color: darksalmon;font-family: 'Foldit';font-size: xxx-large;letter-spacing: 25px;">Facilities</h1>
+        </div>
+        <div class="column1" id="facilityp">
+            
+              
+              <div class="w3-content w3-display-container" style="margin-top: 50px;border-radius: 10px;">
+              
+              <div class="w3-display-container mySlides">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black" style="margin-top:-50px;margin-bottom:54px;font-size:x-large;font-family:'Poiret One';letter-spacing: 22px;">
+                    DANCE ROOM
+                  </div>
+                <img src="dance.jpg" style="width:100%;border-radius: 20px;box-shadow: 0 0 25px #9E9E9E;">
+              </div>
+              
+              <div class="w3-display-container mySlides">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black"style="margin-top:-50px;margin-bottom:54px;font-size:x-large;font-family:'Poiret One';letter-spacing: 22px;">
+                  MUSIC ROOM
+                </div>
+                <img src="music.jpg" style="width:100%;border-radius: 20px;box-shadow: 0 0 25px peachpuff;">
+        
+              </div>
+              
+              <div class="w3-display-container mySlides">
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black"style="margin-top:-50px;margin-bottom:54px;font-size:x-large;font-family:'Poiret One';letter-spacing: 22px;">
+                  BEAUTIFUL LIBRARY
+                </div>
+                <img src="library.jpg" style="width:100%;border-radius: 20px;box-shadow: 0 0 25px #9E9E9E;">
+                
+              </div>
+              
+              <div class="w3-display-container mySlides">
+                <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black"style="margin-top:-50px;margin-bottom:54px;font-size:x-large;font-family:'Poiret One';letter-spacing: 22px;">
+                    AUDITORIUM
+                  </div>
+                <img src="audi.jpg" style="width:100%;border-radius: 20px;box-shadow: 0 0 25px #9E9E9E;">
+              </div>
+              
+              <div class="w3-display-container mySlides">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"style="margin-top:-50px;margin-bottom:54px;font-size:x-large;font-family:'Poiret One';letter-spacing: 22px;">
+                    COMPUTER LAB
+                </div>
+                 <img src="lab.jpg" style="width:100%;border-radius: 20px;box-shadow: 0 0 25px #9E9E9E;">
+              </div>
+              
+              <button class="w3-button w3-display-left w3-black " onclick="plusDivs(-1)" style="margin-top: 40px;margin-right: 10px;width: 115.2px;
+              height: 25.2px;">&#10094;</button>
+              <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)" style="margin-top: 40px;margin-left: 10px;width: 115.2px;
+              height: 25.2px;">&#10095;</button>
+              
+              </div>
+              
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+              
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
+         </div>
+</div>
+
+</body>
+<body>
+
+    <div id="contact" style="background-color: #F2AA4CFF;height: 500px;color: #101820FF;margin: 0;border-radius: 0;width: 1511px;">
+        
+        <div id="column2">
+            <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;letter-spacing: 20px;text-align: justify;margin-top: 0;">CONTACT</h1>
+            <h1 style="text-align: justify;font-family: 'Poiret One';">US</h1>
+            <br><br><br><br>
+                <h3 style="text-align: left;margin-bottom: 0;margin-left: 30px;"><i class="fa-solid fa-map-location-dot fa-lg" style="color: #ab0505;"></i>&nbsp;&nbsp;&nbsp;&nbsp;ADDRESS</h3><br>
+                <p style="text-align: left;margin-top: 10px;">
+                TONBRIDGE SCHOOL <br>
+                High Street, Tonbridge <br>
+                Kent, TN9 1JP <br>
+                England</p><br>
+                <h3 style="margin-top: 131px;font-size: x-small;color: white;letter-spacing: 2px;font-family: 'Poiret One';"><i class="fa-regular fa-copyright fa-lg" style="color: #ffffff;"></i>&nbsp;&nbsp;2023 Tonbridge-School, Inc. All rights reserved</h3>
+        </div>
+
+        <div id="column3">
+        <h3 style="margin-top: 80px;margin-bottom: 0;"><i class="fa-solid fa-phone-volume fa-lg" style="color: #ab0505;"></i>&nbsp;&nbsp;&nbsp;&nbsp;PHONE NUMBERS</h3><br>
+        <P style="margin-top: 0;letter-spacing: 5px;"><i class="fa-solid fa-circle fa-2xs" style="color: #121212;"></i>&nbsp;&nbsp;022-789652 <br>
+            <i class="fa-solid fa-circle fa-2xs" style="color: #121212;"></i>&nbsp;&nbsp;022-678542 <br>
+            <i class="fa-solid fa-circle fa-2xs" style="color: #121212;"></i>&nbsp;&nbsp;022-797926 <br>
+            <i class="fa-solid fa-circle fa-2xs" style="color: #121212;"></i>&nbsp;&nbsp;022-234567
+        </P>
+
+        <h3 style="margin-top: 90px;text-align: left;margin-left: 115px;"><i class="fa-solid fa-envelope fa-lg" style="color: #ab0505;"></i>&nbsp;&nbsp;&nbsp;&nbsp;EMAIL IDs</h3>
+        <p style="text-align: start;margin-left: 143px;font-family: Sulphur Point;">
+            <i class="fa-solid fa-circle fa-2xs" style="color: #121212;"></i>&nbsp;&nbsp; admissions@tonbridge-school.org <br>
+            <i class="fa-solid fa-circle fa-2xs" style="color: #121212;"></i>&nbsp;&nbsp; enquiry@tonbridge-school.org <br>
+            <i class="fa-solid fa-circle fa-2xs" style="color: #121212;"></i>&nbsp;&nbsp; tonbridgeschool@gmail.com <br>
+        </p>
+        </div>
+        
+        <div id="column4">
+
+            <h3 style="margin-top: 72px;"><i class="fa-solid fa-mobile-screen fa-lg" style="color: #ab0505;"> </i> &nbsp;&nbsp; SOCIAL MEDIA <br> HANDLES</h3>
+            <br>
+            <i id="soc" class="fa-brands fa-facebook fa-2xl" style="color: #050505;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i id="soc" class="fa-brands fa-twitter fa-2xl" style="color: #050505;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i id="soc" class="fa-brands fa-instagram fa-2xl" style="color: #050505;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i id="soc" class="fa-brands fa-linkedin fa-2xl" style="color: #050505;"></i>
+
+            <img src="log1.png" alt="logo" style="height: 300px;width: 408px;margin-top: 63px;">
+        
+        </div>
+    </div>
+
+</body>
+</html>
